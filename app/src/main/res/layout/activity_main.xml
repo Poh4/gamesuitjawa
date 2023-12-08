@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txcom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilihan Komputer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/com"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/batu_atas"
+        android:layout_below="@+id/txcom"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilihan Player"
+        android:layout_below="@+id/player"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/player"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/batu_bawah"
+        android:layout_below="@+id/txcom"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:layout_below="@+id/txplayer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp" />
+
+    <ImageButton
+        android:id="@+id/btnbatu"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/txscore"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/batu_bawah"
+        android:contentDescription="batu" />
+
+    <ImageButton
+        android:id="@+id/btngunting"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/txscore"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/btnbatu"
+        android:background="@drawable/gunting_bawah"
+        android:contentDescription="gunting" />
+
+    <ImageButton
+        android:id="@+id/btnkertas"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/txscore"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/btngunting"
+        android:background="@drawable/kertas_bawah"
+        android:contentDescription="kertas" />
+
+</RelativeLayout>
